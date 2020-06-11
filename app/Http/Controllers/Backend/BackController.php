@@ -4,8 +4,9 @@ namespace App\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
 
-class FrontController extends Controller
+class BackController extends Controller
 {
 
     //call controller function passing $id
@@ -38,7 +39,7 @@ class FrontController extends Controller
         // echo "</br>";
         // echo $photo->getClientSize();
 
-        $photoName = uniqid('photo_',true).str_random(10) . '.' . $photo->getClientOriginalExtension();
+        $photoName = uniqid('photo_',true).Str::random(10). '.' . $photo->getClientOriginalExtension();
 
     
 

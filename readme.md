@@ -5,7 +5,7 @@ This is not a complete Website. But It points the way to creating a full advance
 
 > - Routing & Controller
 > - Blade Templating
-> - Froms Validation & File Upload
+> - Forms Validation & File Upload
 
 > - Database Migration
 > - Eloquent ORM
@@ -19,3 +19,5 @@ This is not a complete Website. But It points the way to creating a full advance
 > - Notification
 > - Broadcasting
 > - Echo & Mix
+
+> - REST API Implimentation

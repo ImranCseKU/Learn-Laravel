@@ -21,13 +21,13 @@ Route::get('/post','Frontend\FrontController@Showposts');
 
 //BackEnd
 // Route::group(['prefix' => 'admin', 'namespace'=>'Backend'], function () {
-//     Route::get('/about/{id}', 'FrontController@about');
-//     Route::get('/career/{id}/{name?}', 'FrontController@career');
+//     Route::get('/about/{id}', 'BackController@about');
+//     Route::get('/career/{id}/{name?}', 'BackController@career');
 // });
 
 //sign Up(With Photo)
-// Route::get('/register', 'Backend\FrontController@ShowRegisterForm')->name('register');
-// Route::post('/register', 'Backend\FrontController@ProcessRegistration')->name('register');
+// Route::get('/register', 'Backend\BackController@ShowRegisterForm')->name('register');
+// Route::post('/register', 'Backend\BackController@ProcessRegistration')->name('register');
 
 
 //Http:Controllers:StudentController
@@ -71,5 +71,5 @@ Route::group(['namespace' => 'Backend'], function () {
 });
 
 
-// Send mail
+// Send mail and Verify
 Route::get('/verify/{token}', 'MailVerifyController@VerifyEmail')->name('verify');

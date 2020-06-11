@@ -37,7 +37,7 @@ class AuthController extends Controller
                         ->withInput();
         }
 
-        // do oparation upon input data ...
+        // Do oparation upon input data ...
         $data = [
             "name"     => trim($request->name),
             "email"    => strtolower(trim($request->email)),

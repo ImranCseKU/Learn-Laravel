@@ -31,8 +31,8 @@ class VerifyEmailNotification extends Notification
      */
     public function via($notifiable)
     {
-        // return ['mail'];
-        return ['mail', 'nexmo'];
+        return ['mail'];
+        // return ['mail', 'nexmo'];
     }
 
     /**
